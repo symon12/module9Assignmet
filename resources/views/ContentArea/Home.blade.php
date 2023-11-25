@@ -1,5 +1,4 @@
 @extends("Layouts.app")
-{{-- @include('Navigation.head') --}}
 @section("content")
 
 
