@@ -30,7 +30,7 @@
         <li><a class="nav-link scrollto {{$active=='home'?  "active":""}}" href="{{ route('home') }}">Home</a></li>
         <li><a class="nav-link scrollto {{$active=='about'?  "active":""}}" href="{{ route('about.me') }}">AboutMe</a></li>
         <li><a class="nav-link scrollto  {{$active=='projects'?  "active":""}}" href="{{ route('projects') }}">Projects</a></li>
-        <li><a class="nav-link scrollto {{$active=='cotact'?  "active":""}}" href="{{ route('contact') }}">Contact</a></li>
+        <li><a class="nav-link scrollto  {{$active=='contact'?  "active":""}}" href="{{ route('contact') }}">Contact</a></li>
        
       </ul>
       <i class="bi bi-list mobile-nav-toggle"></i>
