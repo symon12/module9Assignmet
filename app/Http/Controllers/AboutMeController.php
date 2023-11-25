@@ -11,7 +11,8 @@ class AboutMeController extends Controller
      */
     public function index()
     {
-        return view('ContentArea.AboutMe');
+        $active = "about";
+        return view('ContentArea.AboutMe', compact('active'));
     }
 
     /**

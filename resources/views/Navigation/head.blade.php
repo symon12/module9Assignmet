@@ -14,6 +14,9 @@
   </div>
 </section>
 
+
+
+
 <!-- ======= Header ======= -->
 <header id="header" class="d-flex align-items-center">
   <div class="container d-flex align-items-center">
@@ -24,16 +27,16 @@
 
     <nav id="navbar" class="navbar">
       <ul>
-        <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-        <li><a class="nav-link scrollto" href="{{ asset('about-me') }}">AboutMe</a></li>
-        <li><a class="nav-link scrollto" href="#services">Services</a></li>
-        <li><a class="nav-link scrollto " href="#portfolio">Portfolio</a></li>
-        <li><a class="nav-link scrollto" href="#team">Team</a></li>
-        <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-        <li><a class="getstarted scrollto" href="#about">Get Started</a></li>
+        <li><a class="nav-link scrollto {{$active=='home'?  "active":""}}" href="{{ route('home') }}">Home</a></li>
+        <li><a class="nav-link scrollto {{$active=='about'?  "active":""}}" href="{{ route('about.me') }}">AboutMe</a></li>
+        <li><a class="nav-link scrollto  {{$active=='projects'?  "active":""}}" href="{{ route('projects') }}">Projects</a></li>
+        <li><a class="nav-link scrollto {{$active=='cotact'?  "active":""}}" href="{{ route('contact') }}">Contact</a></li>
+       
       </ul>
       <i class="bi bi-list mobile-nav-toggle"></i>
     </nav><!-- .navbar -->
 
   </div>
 </header><!-- End Header -->
+
+  </header>

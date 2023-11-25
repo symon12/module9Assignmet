@@ -2,6 +2,7 @@
 @section("content")
 
 
+
  <!-- ======= Hero Section ======= -->
  <section id="hero">
     <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
@@ -88,6 +89,6 @@
   </section><!-- End Featured Services Section -->
 
 {{-- @include('ContentArea.AboutMe') --}}
-@include('ContentArea.Projects')
-@include('ContentArea.Contact')
+{{-- @include('ContentArea.Projects')
+@include('ContentArea.Contact') --}}
 @endsection

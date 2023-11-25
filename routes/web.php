@@ -1,8 +1,11 @@
 <?php
 
-use App\Http\Controllers\AboutMeController;
-use App\Http\Controllers\ProjectsController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\AboutMeController;
+use App\Http\Controllers\ContactController;
+use App\Http\Controllers\ProjectsController;
+use SebastianBergmann\CodeCoverage\Report\Xml\Project;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,5 +22,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get("project",[ProjectsController::class,"Project"])->name('home');
+Route::get("home",[HomeController::class,"Home"])->name('home');
 Route::get('about-me', [AboutMeController::class, 'index'])->name('about.me');
+Route::get("project",[ProjectsController::class,"Project"])->name('projects');
+Route::get("contact",[ContactController::class,"Contact"])->name('contact');

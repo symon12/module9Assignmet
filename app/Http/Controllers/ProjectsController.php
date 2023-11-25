@@ -7,7 +7,8 @@ use Illuminate\Http\Request;
 class ProjectsController extends Controller
 {
     function Project(){
-        return view("ContentArea.Home");
+        $active = "projects";
+        return view("ContentArea.Projects", compact('active'));
     }
 
 }

@@ -1,4 +1,7 @@
- <!-- ======= Contact Section ======= -->
+@extends("Layouts.app")
+@section("content")
+
+<!-- ======= Contact Section ======= -->
  <section id="contact" class="contact">
     <div class="container">
 
@@ -69,3 +72,5 @@
   </section><!-- End Contact Section -->
 
 </main><!-- End #main -->
+  
+@endsection

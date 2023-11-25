@@ -1,3 +1,6 @@
+@extends("Layouts.app")
+@section("content")
+
 <!-- ======= Our Clients Section ======= -->
 <section id="clients" class="clients">
     <div class="container">
@@ -352,3 +355,6 @@
 
     </div>
   </section><!-- End Team Section -->
+
+    
+  @endsection
